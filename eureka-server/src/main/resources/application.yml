@@ -1,0 +1,32 @@
+#management:
+#  context-path: /admin
+#  security:
+#    enabled: true
+#    roles: ACTRADMIN
+#security:
+#  user:
+#    name: admin
+#    password: admin
+#endpoints:
+#  shutdown:
+#    enabled: true
+#server:
+#  port: 1111
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    register-with-eureka: false # \u4E0D\u5411\u6CE8\u518C\u4E2D\u5FC3\u6CE8\u518C\u81EA\u5DF1
+#    fetch-registry: false # \u6CE8\u518C\u4E2D\u5FC3\u7684\u804C\u8D23\u662F\u7EF4\u62A4\u670D\u52A1\u5B9E\u4F8B\uFF0C\u4E0D\u9700\u8981\u68C0\u7D22\u670D\u52A1
+#    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+---
+
+
+spring:
+  profiles:
+    active: peer2
+eureka:
+  client:
+    register-with-eureka: false # 不向注册中心注册自己
+    fetch-registry: false # 注册中心的职责是维护服务实例，不需要检索服务
