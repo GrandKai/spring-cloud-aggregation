@@ -5,5 +5,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://peer1:1111/eureka/
+    registry-fetch-interval-seconds: 30 # 更新服务清单时间间隔
 server:
   port: 9000
