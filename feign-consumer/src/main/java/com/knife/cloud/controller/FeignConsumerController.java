@@ -15,4 +15,13 @@ public class FeignConsumerController {
     public String helloConsumer() {
         return helloService.hello();
     }
+
+    @GetMapping("feign-consumer2")
+    public String helloConsumer2() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(helloService.hello("grandkai")).append("\n");
+        sb.append(helloService.hello("grandkai", 18));
+
+        return sb.toString();
+    }
 }
