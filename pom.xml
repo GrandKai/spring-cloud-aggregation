@@ -42,6 +42,7 @@
 	</dependencyManagement>
 
 	<modules>
+		<!--<module>hello-service-api</module>-->
 		<module>hello-service</module>
 		<module>eureka-server</module>
 		<module>ribbon-consumer</module>

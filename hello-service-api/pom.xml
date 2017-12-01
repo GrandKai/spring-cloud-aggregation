@@ -21,14 +21,20 @@
 
     <build>
         <plugins>
+            <!-- 编译插件 -->
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <!-- Bundle all dependencies and project resources. Does not bundle a bootstrap loader-->
-                    <layout>NONE</layout>
-                </configuration>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
             </plugin>
+
+            <!--<plugin>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+                <!--<configuration>-->
+                    <!--&lt;!&ndash; Bundle all dependencies and project resources. Does not bundle a bootstrap loader&ndash;&gt;-->
+                    <!--<layout>NONE</layout>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 </project>
